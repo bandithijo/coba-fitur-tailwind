@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Coba Fitur TailwindCSS</title>
+    <link href="./dist/css/style.css" rel="stylesheet">
+  </head>
+  <body>
+    <h1 class="text-3xl font-bold text-hijau">Hello TailwindCSS!</h1>
+
+    <div class="kotak">Kotak</div>
+
+    <!-- Membuat Tema Warna Start -->
+    <div class="h-80 bg-gray-100 flex items-center justify-center">
+      <div class="rounded-md px-8 py-6 text-left shadow-lg bg-tema/10">
+        <h3 class="text-2xl font-bold text-center text-tema/100">My Form</h3>
+        <form action="">
+          <div class="mt-4">
+            <div>
+              <label for="email" class="text-tema/80">Email</label>
+              <input type="email" class="text-sm w-full px-4 py-2 mt-2 border rounded-md transition ease-in-out focus:outline-none focus:ring-2 focus:ring-offset-2 focus:rig-tema/60" placeholder="masukkan email...">
+            </div>
+            <div class="flex items-baseline justify-center">
+              <button class="px-6 py-2 mt-4 text-white transition ease-in-out bg-tema/80 rounded-md hover:bg-tema/100">Kirim</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- Membuat Tema Warna End -->
+
+    <!-- Border Spacing Start -->
+    <div class="px-4 py-8">
+      <table class="w-full text-sm border-separate border-spacing-4">
+        <thead>
+          <tr class="text-center font-semibold">
+            <th class="w-1/2 border border-slate-300 p-4 text-slate-800 bg-slate-200">Provinsi</th>
+            <th class="w-1/2 border border-slate-300 p-4 text-slate-800 bg-slate-200">Ibu Kota</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="text-center">
+            <td class="border border-slate-300 p-4 text-slate-500">Jawa Barat</td>
+            <td class="border border-slate-300 p-4 text-slate-500">Bandung</td>
+          </tr>
+          <tr class="text-center">
+            <td class="border border-slate-300 p-4 text-slate-500">Jawa Tengah</td>
+            <td class="border border-slate-300 p-4 text-slate-500">Semarang</td>
+          </tr>
+          <tr class="text-center">
+            <td class="border border-slate-300 p-4 text-slate-500">Jawa Timur</td>
+            <td class="border border-slate-300 p-4 text-slate-500">Surabaya</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <!-- Border Spacing End -->
+
+    <!-- Arbitrary Variant Start -->
+    <div class="px-4 py-8 mb-20">
+      <ul class="w-2/3 m-auto [&>*]:bg-pink-100 [&>*]:text-pink-700 [&>li:nth-child(3)]:bg-sky-100 [&>li:nth-child(4)>div>span:nth-child(2)]:bg-emerald-400 [&>li:nth-child(4):hover>div>span:nth-child(2)]:bg-purple-400">
+        <li class="bg-teal-100 rounded-lg py-3 px-6 mb-2 text-base text-teal-700 text-center">item 1</li>
+        <li class="bg-teal-100 rounded-lg py-3 px-6 mb-2 text-base text-teal-700 text-center">item 2</li>
+        <li class="bg-teal-100 rounded-lg py-3 px-6 mb-2 text-base text-teal-700 text-center">item 3</li>
+        <li class="bg-teal-100 rounded-lg py-3 px-6 mb-2 text-base text-teal-700 text-center">
+          <div class="flex items-center justify-center">
+            <span class="w-10 h-10 bg-sky-400 mx-3"></span>
+            <span class="w-10 h-10 bg-sky-400 mx-3"></span>
+            <span class="w-10 h-10 bg-sky-400 mx-3"></span>
+          </div>
+        </li>
+        <li class="bg-teal-100 rounded-lg py-3 px-6 mb-2 text-base text-teal-700 text-center">item 5</li>
+      </ul>
+    </div>
+    <!-- Arbitrary Variant End -->
+  </body>
+</html>
